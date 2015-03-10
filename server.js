@@ -1,8 +1,6 @@
-var request = require('request');
-var Lame = require('lame');
-var Speaker = require('speaker');
-
-var text = 'Hello i am a raspberry pi. Like it Jan?';
-
-var url = 'http://translate.google.com/translate_tts?tl=en&q=' + encodeURIComponent(text);
-request(url).pipe(new Lame.Decoder).pipe(new Speaker);
+(function myLoop (i) {          
+   setTimeout(function () {   
+     console.log('JAAAA!');                
+     if (--i) myLoop(i);      //  decrement i and call myLoop again if i > 0
+   }, 3000)
+})(100);        
