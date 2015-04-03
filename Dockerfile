@@ -7,7 +7,7 @@ CMD /start
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-ONBUILD COPY rpi/* /usr/src/app/
+ONBUILD COPY . /usr/src/app/
 ONBUILD RUN npm install
 #ONBUILD COPY . /usr/src/app
 #CMD [ "npm", "start" ]
