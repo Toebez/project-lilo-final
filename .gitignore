@@ -9,3 +9,11 @@ main
 node_modules/
 *.pyc
 *.log
+# Vim
+*.swp
+
+# Logs
+*.log
+
+# Folders
+node_modules
