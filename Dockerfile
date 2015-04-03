@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:wheezy
+FROM resin/rpi-node:0.11.15
 
 # Install Dropbear.
 RUN apt-get update && apt-get install dropbear
