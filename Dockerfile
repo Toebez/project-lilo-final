@@ -20,6 +20,6 @@ RUN apt-get install -y vim screen
 WORKDIR /usr/src/app
 COPY rpi /usr/src/app/
 RUN npm install
-#CMD [ "npm", "start" ]
+##CMD [ "npm", "start" ]
 
 
