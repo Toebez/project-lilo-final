@@ -1,4 +1,4 @@
-FROM resin/rpi-node:0.11.15
+FROM resin/rpi-node:0.11.1
 
 # Install Dropbear.
 RUN apt-get update && apt-get install dropbear
