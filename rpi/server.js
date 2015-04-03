@@ -1,6 +1,12 @@
-(function myLoop (i) {          
-  setTimeout(function () {   
-    console.log('JAAABBBA3!');                
-    if (--i) myLoop(i);      //  decrement i and call myLoop again if i > 0
-  }, 3000)
-})(100);        
+var SerialPort = require("serialport").SerialPort
+var serialPort = new SerialPort("/dev/ttyACM0", {
+  baudrate: 9600
+});
+
+serialPort.on("open", function () {
+  console.log('open');
+  serialPort.write("s\n", function(err, results) {
+    console.log('err ' + err);
+    console.log('results ' + results);
+  });
+});
