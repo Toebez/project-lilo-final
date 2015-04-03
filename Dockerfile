@@ -9,9 +9,9 @@ CMD /start
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-ONBUILD COPY rpi/package.json /usr/src/app/
+ONBUILD COPY package.json /usr/src/app/
 ONBUILD RUN npm install
-ONBUILD COPY rpi /usr/src/app/
+ONBUILD COPY . /usr/src/app/
 
 #CMD [ "npm", "start" ]
 
