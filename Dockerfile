@@ -6,8 +6,8 @@ RUN chmod a+x /start
 CMD /start
 
 RUN mkdir -p /usr/src/app
-#WORKDIR /usr/src/app
-COPY . /usr/src/app/
+WORKDIR /usr/src/app
+COPY rpi /usr/src/app/
 ONBUILD COPY . /usr/src/app/
 #ONBUILD RUN npm install
 #ONBUILD COPY . /usr/src/app
