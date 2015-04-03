@@ -2,7 +2,7 @@
   "name": "test",
   "version": "0.0.0",
   "dependencies": {
-      "serialport": "1.6.3"
+      "serialport-js": "0.2.1"
   },
   "engines": {
       "node": "0.10.22"
