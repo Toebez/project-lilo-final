@@ -14,9 +14,6 @@ RUN apt-get install -y build-essential mongodb git-core python
 # BASIC TOOLING INSTALL
 RUN apt-get install -y vim screen
 
-# INIT MONGO
-CMD service mongodb start
-
 #-------------------------------------------------------------------
 # Don't touch above
 #-------------------------------------------------------------------
@@ -32,6 +29,9 @@ ADD web/output/web.tar.gz .
 # BIG INSTALL UPFRONT
 #RUN mkdir -p /usr/src/app/node_modules
 #RUN npm install --prefix /usr/src/app serialport@1.6.3
+
+# INIT MONGO
+# CMD service mongodb start
 
 #APP
 #WORKDIR /usr/src/app
