@@ -15,7 +15,7 @@ RUN apt-get install -y build-essential mongodb git-core python
 RUN apt-get install -y vim screen
 
 # INIT MONGO
-RUN service mongodb start
+CMD service mongodb start
 
 #-------------------------------------------------------------------
 # Don't touch above
