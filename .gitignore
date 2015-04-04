@@ -1,8 +1,5 @@
 *old-repo*
 *.sublime-*
-.build
-log
-spidev_test
 .DS_Store
 build/
 main

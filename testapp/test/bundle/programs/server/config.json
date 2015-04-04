@@ -1,6 +1,0 @@
-{
-  "meteorRelease": "none",
-  "clientPaths": {
-    "web.browser": "../web.browser/program.json"
-  }
-}

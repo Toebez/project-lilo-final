@@ -23,9 +23,9 @@ RUN apt-get install -y vim screen
 #-------------------------------------------------------------------
 
 WORKDIR /usr/src/app
-COPY testapp/test/bundle /usr/src/app/
-WORKDIR programs/server
-RUN npm install
+COPY testapp/test/ /usr/src/app/
+#WORKDIR programs/server
+#RUN npm install
 
 # BIG INSTALL UPFRONT
 #RUN mkdir -p /usr/src/app/node_modules
