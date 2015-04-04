@@ -18,9 +18,9 @@ RUN apt-get install -y vim screen
 # Don't touch above
 #-------------------------------------------------------------------
 
+ADD web/output/web.tar.gz /usr/src/app/
 WORKDIR /usr/src/app
-COPY web/output /usr/src/app/
-# CMD tar -zxvf web.tar.gz
+# CMD tar -zxvf 
 # WORKDIR bundle
 # RUN (cd programs/server && npm install)
 # RUN export MONGO_URL=mongodb://localhost:27017/rpi
