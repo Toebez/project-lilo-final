@@ -17,10 +17,10 @@ CMD /start
 RUN apt-get install -y vim screen
 
 # APP
-WORKDIR /usr/src/app
+#WORKDIR /usr/src/app
 #COPY rpi /usr/src/app/
 #RUN npm install
 
-COPY web /usr/src/app/
-RUN npm install --production
-CMD [ "node", "server.js" ]
+#COPY web /usr/src/app/
+#RUN npm install --production
+#CMD [ "node", "server.js" ]
