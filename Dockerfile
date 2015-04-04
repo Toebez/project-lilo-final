@@ -22,7 +22,7 @@ CMD service mongodb start
 #-------------------------------------------------------------------
 
 WORKDIR /root
-COPY web/output/ .
+ADD web/output/web.tar.gz .
 # CMD tar -zxvf web.tar.gz
 # WORKDIR bundle
 # RUN (cd programs/server && npm install)
