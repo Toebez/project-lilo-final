@@ -18,7 +18,7 @@ RUN apt-get install -y vim screen
 # Don't touch above
 #-------------------------------------------------------------------
 
-WORKDIR /root
+WORKDIR /usr/src/app
 COPY web/output/web.tar.gz .
 # CMD tar -zxvf web.tar.gz
 # WORKDIR bundle
