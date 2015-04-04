@@ -16,6 +16,8 @@ CMD /start
 # BASIC INSTALL
 RUN apt-get install -y vim screen
 
+RUN apt-get install -y build-essential debian-keyring autoconf automake libtool flex bison mongodb
+
 # APP
 #WORKDIR /usr/src/app
 #COPY rpi /usr/src/app/
@@ -24,3 +26,8 @@ RUN apt-get install -y vim screen
 #COPY web /usr/src/app/
 #RUN npm install --production
 #CMD [ "node", "server.js" ]
+
+
+#apt-get autoremove --purge
+
+#apt-get clean
