@@ -15,17 +15,19 @@ RUN apt-get install -y build-essential mongodb git-core python
 RUN apt-get install -y vim screen
 
 # INIT MONGO
-#RUN mkdir /data/db/
-#CMD service mongodb start
+RUN service mongodb start
 
 #-------------------------------------------------------------------
 # Don't touch above
 #-------------------------------------------------------------------
 
-WORKDIR /usr/src/app
-COPY testapp/test/ /usr/src/app/
-#WORKDIR programs/server
-#RUN npm install
+WORKDIR /root
+COPY web/output/ .
+RUN tar -zxvf web.tar.gz
+WORKDIR bundle
+RUN (cd programs/server && npm install)
+RUN export MONGO_URL=mongodb://localhost:27017/rpi
+RUN export ROOT_URL=http://192.168.2.8:8008
 
 # BIG INSTALL UPFRONT
 #RUN mkdir -p /usr/src/app/node_modules
