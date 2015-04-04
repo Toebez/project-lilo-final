@@ -9,15 +9,19 @@ RUN chmod a+x /start
 CMD /start
 
 # METEOR
-RUN apt-get install -y build-essential debian-keyring autoconf automake libtool flex bison mongodb git-core python
-WORKDIR /usr/local/lib
-RUN git clone https://github.com/4commerce-technologies-AG/meteor.git
-WORKDIR meteor
-RUN ./scripts/generate-dev-bundle.sh
-RUN ln -s /usr/local/lib/meteor/meteor /usr/local/bin/meteor
+RUN apt-get install -y build-essential mongodb git-core python
 
 # BASIC TOOLING INSTALL
 RUN apt-get install -y vim screen
+
+#-------------------------------------------------------------------
+# Don't touch above
+#-------------------------------------------------------------------
+
+WORKDIR /usr/src/app
+COPY testapp/test/bundle /usr/src/app/
+WORKDIR programs/server
+RUN npm install
 
 # BIG INSTALL UPFRONT
 #RUN mkdir -p /usr/src/app/node_modules
