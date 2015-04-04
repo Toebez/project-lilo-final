@@ -22,4 +22,4 @@ COPY rpi /usr/src/app/
 RUN npm install
 ##CMD [ "npm", "start" ]
 
-
+COPY web/test /usr/src/app/

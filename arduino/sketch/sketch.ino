@@ -28,27 +28,27 @@ void loop (void)
 void executeCommand(char command) {
   switch (command) {
     case 's':
-      Serial.println("Stop");
+      Serial.print('s');
       stop();
       break;
     case 'j':
-      Serial.println("Back");
+      Serial.print('b');
       backward();
       break;
     case 'k':
-      Serial.println("Forward");
+      Serial.print('f');
       forward();
       break;
     case 'h':
-      Serial.println("Left");
+      Serial.print('l');
       left();
       break;
     case 'l':
-      Serial.println("Right");
+      Serial.print('r');
       right();
       break;
     default:
-      Serial.println("Unknown command");
+      Serial.print('?');
   }
 }
 

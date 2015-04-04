@@ -1,12 +1,19 @@
-var SerialPort = require("serialport").SerialPort
-var serialPort = new SerialPort("/dev/ttyACM0", {
+var serialport = require("serialport");
+var SerialPort = serialport.SerialPort;
+
+var sp = new SerialPort("/dev/ttyACM0", {
   baudrate: 9600
 });
 
-serialPort.on("open", function () {
-  console.log('open');
-  serialPort.write("s\n", function(err, results) {
-    console.log('err ' + err);
-    console.log('results ' + results);
+sp.on("open", function () {
+  sp.on('data', function(data) {
+    console.log(data + ' ');
   });
+
+  (function myLoop (i) {
+    setTimeout(function () {
+      sp.write('s');
+      if (--i) myLoop(i);
+    }, 3000)
+  })(100);
 });
