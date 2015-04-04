@@ -5,7 +5,7 @@ RUN apt-get update
 # BIG INSTALL UPFRONT
 RUN apt-get install -y build-essential python
 RUN mkdir -p /usr/src/app/node_modules
-RUN npm install --prefix /usr/src/app serialport
+RUN npm install --prefix /usr/src/app serialport@1.6.3
 
 # SSH
 RUN apt-get install -y dropbear 
@@ -20,8 +20,7 @@ RUN apt-get install -y vim screen
 WORKDIR /usr/src/app
 #COPY rpi /usr/src/app/
 #RUN npm install
-#CMD [ "npm", "start" ]
 
 COPY web /usr/src/app/
 RUN npm install --production
-
+CMD [ "node", "server.js" ]
