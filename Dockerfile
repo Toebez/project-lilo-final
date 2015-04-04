@@ -22,6 +22,6 @@ WORKDIR /usr/src/app
 #RUN npm install
 #CMD [ "npm", "start" ]
 
-COPY web/test /usr/src/app/
-RUN npm install bundle/programs/server
+COPY web /usr/src/app/
+RUN npm install --production
 
