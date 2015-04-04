@@ -19,7 +19,7 @@ RUN apt-get install -y vim screen
 #-------------------------------------------------------------------
 
 WORKDIR /root
-ADD web/output/web.tar.gz .
+COPY web/output/web.tar.gz .
 # CMD tar -zxvf web.tar.gz
 # WORKDIR bundle
 # RUN (cd programs/server && npm install)
