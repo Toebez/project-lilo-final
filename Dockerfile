@@ -23,7 +23,7 @@ CMD service mongodb start
 
 WORKDIR /root
 COPY web/output/ .
-RUN tar -zxvf web.tar.gz
+CMD tar -zxvf web.tar.gz
 WORKDIR bundle
 RUN (cd programs/server && npm install)
 RUN export MONGO_URL=mongodb://localhost:27017/rpi
