@@ -14,6 +14,3 @@ COPY scripts /usr/src/
 COPY web/output/bundle /usr/src/app/
 
 CMD /usr/src/start
-
-# # INSTALL DEPENDENCIES
-#  (cd programs/server && npm install)
