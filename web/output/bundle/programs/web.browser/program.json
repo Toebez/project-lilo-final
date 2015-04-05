@@ -523,6 +523,15 @@
       "hash": "ca35b697d99cae4d1b60f2d60fcd37771987eb07"
     },
     {
+      "path": "app/test.jpeg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/test.jpeg",
+      "size": 0,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    },
+    {
       "path": "head.html",
       "where": "internal",
       "type": "head",

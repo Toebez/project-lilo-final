@@ -9,6 +9,8 @@ RUN apt-get update && apt-get install -y \
   vim \
   screen
 
+RUN apt-get install -y libraspberrypi-bin
+
 COPY scripts /usr/src/
 
 COPY web/output/bundle /usr/src/app/
