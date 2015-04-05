@@ -1,13 +1,10 @@
 #!/bin/bash
 export PASSWD=${PASSWD:=root}
-export PORT==${PORT}
+export PORT=${PORT}
 export ROOT_URL=${ROOT_URL}
 export MONGO_URL=${MONGO_URL}
 
-service mongodb start &
-
 dropbear -E -F
 
-
-
+# service mongodb start &
 # node /usr/src/app/main.js
