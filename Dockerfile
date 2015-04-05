@@ -20,7 +20,7 @@ RUN npm install --prefix /usr/src/app serialport@1.3.1
 RUN npm install --prefix /usr/src/app fibers@1.0.5
 
 # SETUP METEOR APP
-ADD web/output/web.tar.gz /usr/src/app/
+ADD web/.output/web.tar.gz /usr/src/app/
 WORKDIR /usr/src/app/bundle
 
 # SET CACHE
