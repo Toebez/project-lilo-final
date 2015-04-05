@@ -33,7 +33,7 @@ RUN mv ../node_modules/serialport programs/server/npm/npm-container/node_modules
 # INSTALL DEPENDENCIES
 RUN (cd programs/server && npm install)
 
-CMD node main.js
+# CMD node main.js &
 
 # BIG INSTALL UPFRONT
 #RUN export PORT=80
