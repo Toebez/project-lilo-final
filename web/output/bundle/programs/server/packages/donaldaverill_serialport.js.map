@@ -1,0 +1,1 @@
+{"version":3,"sources":["donaldaverill:serialport/donaldaverill:serialport.js"],"names":[],"mappings":";;;;;;;;;;;;;;;;AAAA,uC","file":"/packages/donaldaverill_serialport.js","sourcesContent":["SerialPort = Npm.require('serialport');\n"]}

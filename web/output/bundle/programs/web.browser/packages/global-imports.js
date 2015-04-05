@@ -21,6 +21,5 @@ jQuery = Package.jquery.jQuery;
 Random = Package.random.Random;
 EJSON = Package.ejson.EJSON;
 LaunchScreen = Package['launch-screen'].LaunchScreen;
-Async = Package['meteorhacks:async'].Async;
 HTML = Package.htmljs.HTML;
 

@@ -12,11 +12,11 @@ RUN apt-get update && apt-get install -y \
 RUN npm install --prefix /usr/src/cache serialport@1.3.1
 RUN npm install --prefix /usr/src/cache fibers@1.0.5
 
-ADD scripts /usr/src/
+COPY scripts /usr/src/
 
 COPY web/output/bundle /usr/src/app/
 
-CMD /start
+CMD /usrc/src/scripts/start
 
 # # INSTALL DEPENDENCIES
 #  (cd programs/server && npm install)
