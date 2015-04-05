@@ -9,4 +9,4 @@ echo "NPM INSTALL"
 
 echo "UPDATE WITH CACHE"
 rm -rf web/output/bundle/programs/server/node_modules/fibers && cp -r cache/node_modules/fibers web/output/bundle/programs/server/node_modules/fibers
-rm -rf web/output/bundle/programs/server/npm/donaldaverill_serialport/node_modules/serialport && cp -r cache/node_modules/serialport web/output/bundle/programs/server/npm/donaldaverill_serialport/
+rm -rf web/output/bundle/programs/server/npm/donaldaverill_serialport/node_modules/serialport && cp -r cache/node_modules/serialport web/output/bundle/programs/server/npm/donaldaverill_serialport/node_modules/serialport
