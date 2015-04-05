@@ -30,7 +30,7 @@ RUN rm -rf programs/server/npm/npm-container/node_modules/serialport
 RUN mkdir -p programs/server/npm/npm-container/node_modules/serialport
 RUN mv ../node_modules/serialport programs/server/npm/npm-container/node_modules/
 
-ADD setvars.sh /usr/src/app
+ADD setvars /usr/src/app/
 
 # INSTALL DEPENDENCIES
 #CMD (cd programs/server && npm install)
