@@ -28,7 +28,10 @@ if (!process.env.DEBUG) {
     }
 
     Facts.remove({});
-    sp.on("open", openFunction);
+    sp.on("open", Meteor.bindEnvironment(
+      openFunction,
+      logError
+      ));
   });
 
 }

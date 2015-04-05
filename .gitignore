@@ -1,16 +1,9 @@
-*old-repo*
 *.sublime-*
+old-repo
 .DS_Store
 build/
-main
 node_modules/
-*.pyc
-*.log
-# Vim
 *.swp
-
-# Logs
 *.log
-web/.meteor/
-# Folders
-node_modules
+web/.meteor/**/*
+!web/output/**/*
