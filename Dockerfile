@@ -33,22 +33,4 @@ RUN mv ../node_modules/serialport programs/server/npm/npm-container/node_modules
 # INSTALL DEPENDENCIES
 RUN (cd programs/server && npm install)
 
-CMD node main.js &
-
-# BIG INSTALL UPFRONT
-#RUN export PORT=80
-#RUN export ROOT_URL=http://example.com
-
-#RUN mkdir -p /usr/src/app/node_modules
-#RUN npm install --prefix /usr/src/app serialport@1.6.3
-
-#APP
-#WORKDIR /usr/src/app
-#COPY rpi /usr/src/app/
-#RUN npm install
-
-#COPY web /usr/src/app/
-#RUN npm install --production
-#CMD [ "node", "server.js" ]
-#apt-get autoremove --purge
-#apt-get clean
+#CMD node main.js
