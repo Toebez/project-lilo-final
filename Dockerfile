@@ -14,24 +14,16 @@ RUN apt-get install -y build-essential mongodb git-core python
 # BASIC TOOLING INSTALL
 RUN apt-get install -y vim screen
 
-#-------------------------------------------------------------------
-# Don't touch above
-#-------------------------------------------------------------------
-
+# SETUP METEOR APP
 ADD web/output/web.tar.gz /usr/src/app/
-WORKDIR /usr/src/app
-# CMD tar -zxvf 
-# WORKDIR bundle
-# RUN (cd programs/server && npm install)
-# RUN export MONGO_URL=mongodb://localhost:27017/rpi
-# RUN export ROOT_URL=http://192.168.2.8:8008
+WORKDIR /usr/src/app/bundle
+RUN (cd programs/server && npm install)
+RUN export PORT=80
+RUN export ROOT_URL=http://example.com
 
 # BIG INSTALL UPFRONT
 #RUN mkdir -p /usr/src/app/node_modules
 #RUN npm install --prefix /usr/src/app serialport@1.6.3
-
-# INIT MONGO
-# CMD service mongodb start
 
 #APP
 #WORKDIR /usr/src/app
