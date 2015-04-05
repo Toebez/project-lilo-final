@@ -11,6 +11,6 @@ node_modules/
 
 # Logs
 *.log
-web/.meteor
+web/.meteor/
 # Folders
 node_modules
