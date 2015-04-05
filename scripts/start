@@ -6,6 +6,6 @@ export MONGO_URL=${MONGO_URL}
 
 dropbear -E -F
 
-service mongodb start
+# service mongodb start
 
-node /usr/src/app/main.js
+# node /usr/src/app/main.js
