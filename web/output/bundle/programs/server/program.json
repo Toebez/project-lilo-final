@@ -212,10 +212,18 @@
       "path": "packages/twbs_bootstrap.js"
     },
     {
-      "node_modules": "npm/donaldaverill_serialport/node_modules",
-      "sourceMap": "packages/donaldaverill_serialport.js.map",
+      "sourceMap": "packages/meteorhacks_npm.js.map",
       "sourceMapRoot": "packages",
-      "path": "packages/donaldaverill_serialport.js"
+      "path": "packages/meteorhacks_npm.js"
+    },
+    {
+      "node_modules": "npm/npm-container/node_modules",
+      "sourceMap": "packages/npm-container.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/npm-container.js",
+      "assets": {
+        "../../packages.json": "assets/packages.json"
+      }
     },
     {
       "sourceMap": "packages/session.js.map",
@@ -226,6 +234,11 @@
       "sourceMap": "packages/livedata.js.map",
       "sourceMapRoot": "packages",
       "path": "packages/livedata.js"
+    },
+    {
+      "sourceMap": "packages/meteorhacks_async.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/meteorhacks_async.js"
     },
     {
       "path": "packages/global-imports.js"

@@ -1,8 +1,7 @@
 if (!process.env.DEBUG) {
 
-  var sp = SerialPort.SerialPort("/dev/ttyACM0", { 
-    baudrate: 9600 
-  });
+  var SerialPort = Meteor.npmRequire('serialport').SerialPort;
+  var sp = new SerialPort("/dev/ttyACM0", { baudrate: 9600 });
 
   var bind = function bind(func) {
     return Meteor.bindEnvironment(

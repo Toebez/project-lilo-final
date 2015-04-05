@@ -1,6 +1,5 @@
 /* Imports for global scope */
 
-SerialPort = Package['donaldaverill:serialport'].SerialPort;
 Meteor = Package.meteor.Meteor;
 WebApp = Package.webapp.WebApp;
 main = Package.webapp.main;
@@ -21,5 +20,6 @@ Match = Package.check.Match;
 _ = Package.underscore._;
 Random = Package.random.Random;
 EJSON = Package.ejson.EJSON;
+Async = Package['meteorhacks:async'].Async;
 HTML = Package.htmljs.HTML;
 
