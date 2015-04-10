@@ -440,31 +440,22 @@
       "hash": "28b039ee71a940b59e6694e1b2c8c7555daafc2d"
     },
     {
-      "path": "app/client/template.client.js",
+      "path": "app/template.app.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/template.client.js?8f19122c82701a4ba85b1ef224c98a4b52ca483b",
+      "url": "/template.app.js?8f19122c82701a4ba85b1ef224c98a4b52ca483b",
       "size": 1684,
       "hash": "8f19122c82701a4ba85b1ef224c98a4b52ca483b"
     },
     {
-      "path": "app/lib/facts.js",
+      "path": "app/app.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/lib/facts.js?eb6ad7f654272a4bc16b7aa1fa30ad7667d9842a",
-      "size": 58,
-      "hash": "eb6ad7f654272a4bc16b7aa1fa30ad7667d9842a"
-    },
-    {
-      "path": "app/client/client.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/client/client.js?03ab245442d42cf2ced39b37f7b2fc3ce6873cef",
-      "size": 272,
-      "hash": "03ab245442d42cf2ced39b37f7b2fc3ce6873cef"
+      "url": "/app.js?dcfa7a0445da75112657a6365489629f9cfd7795",
+      "size": 1263,
+      "hash": "dcfa7a0445da75112657a6365489629f9cfd7795"
     },
     {
       "path": "8a9f237b18f262d181713666339a013c722d52af.css",
@@ -521,15 +512,6 @@
       "url": "/packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.woff2",
       "size": 18028,
       "hash": "ca35b697d99cae4d1b60f2d60fcd37771987eb07"
-    },
-    {
-      "path": "app/test.jpeg",
-      "where": "client",
-      "type": "asset",
-      "cacheable": false,
-      "url": "/test.jpeg",
-      "size": 0,
-      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
     },
     {
       "path": "head.html",

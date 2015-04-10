@@ -244,13 +244,7 @@
       "path": "packages/global-imports.js"
     },
     {
-      "path": "app/lib/facts.js"
-    },
-    {
-      "path": "app/server/server.js"
-    },
-    {
-      "path": "app/server/server_mocked.js"
+      "path": "app/app.js"
     }
   ]
 }
