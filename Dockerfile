@@ -7,12 +7,16 @@ RUN apt-get update && apt-get install -y \
   git-core \
   python \
   vim \
-  screen
+  screen \
+  libraspberrypi-bin \
+  python-pip
 
-RUN apt-get install -y libraspberrypi-bin
+RUN pip install ino
 
 COPY scripts /usr/src/
 
 COPY web/output/bundle /usr/src/app/ 
+
+COPY arduino/ /usr/src/arduino/
 
 CMD /usr/src/start

@@ -31,19 +31,19 @@ void executeCommand(char command) {
       Serial.print('s');
       stop();
       break;
-    case 'j':
+    case 'b':
       Serial.print('b');
       backward();
       break;
-    case 'k':
+    case 'f':
       Serial.print('f');
       forward();
       break;
-    case 'h':
+    case 'l':
       Serial.print('l');
       left();
       break;
-    case 'l':
+    case 'r':
       Serial.print('r');
       right();
       break;
