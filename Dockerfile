@@ -13,6 +13,6 @@ RUN apt-get install -y libraspberrypi-bin
 
 COPY scripts /usr/src/
 
-COPY web/output/bundle /usr/src/app/
+COPY web/output/bundle /usr/src/app/ 
 
 CMD /usr/src/start
