@@ -28,8 +28,8 @@ if (Meteor.isServer) {
   Meteor.startup(function () {
     var insertFact = function(data) {
       Facts.insert({
-        date_created:  new Date().getTime(),
-        text: data 
+        date_created: new Date().getTime(),
+        text: String.fromCharCode.apply(null, data)
       });
     }
 
