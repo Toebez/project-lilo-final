@@ -4,11 +4,11 @@ export MONGO_URL=mongodb://127.0.0.1:27017/rpi
 
 echo "Start dropbear"
 export PASSWD=${PASSWD:=root}
-dropbear -E -F > dropbear.txt 2>&1 &
+dropbear -E -F > /usr/src/dropbear.txt 2>&1 &
 
 echo "Start mongodb"
 mkdir /data/db/
-mongod > mongo.txt 2>&1 &
+mongod > /usr/src/mongo.txt 2>&1 &
 
 echo "Wait for mongo to start"
 while ! nc -z localhost 27017; do
@@ -18,6 +18,6 @@ done
 echo "Mongo launched"
 
 echo "Start program"
-node /usr/src/app/main.js > app.txt 2>&1 &
+node /usr/src/app/main.js > /usr/src/app.txt 2>&1 &
 
 sleep infinity
