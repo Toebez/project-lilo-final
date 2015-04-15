@@ -9,15 +9,16 @@ RUN apt-get update && apt-get install -y \
   vim \
   screen \
   libraspberrypi-bin \
-  python-pip \
-  arduino
+  python-pip
 
-RUN pip install ino
+#   \
+#  arduino
+# RUN pip install ino
 
 COPY scripts /usr/src/
 
 COPY web/output/bundle /usr/src/app/ 
 
-COPY arduino/ /usr/src/arduino/
+# COPY arduino/ /usr/src/arduino/
 
 CMD /usr/src/start
