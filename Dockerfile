@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
   libraspberrypi-bin \
   python-pip
 
-RUN apt-get install netcat
+RUN apt-get install -y netcat
 
 COPY scripts /usr/src/
 COPY web/output/bundle /usr/src/app/ 
