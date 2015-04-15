@@ -3,6 +3,7 @@ export ROOT_URL=http://example.com
 export MONGO_URL=mongodb://127.0.0.1:27017/rpi
 
 echo "Start mongodb"
+rm -rf /data/db/
 mkdir /data/db/
 mongod > /usr/src/mongo.txt 2>&1 &
 
