@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
   vim \
   screen \
   libraspberrypi-bin \
-  python-pip 
+  python-pip \
   netcat
 
 COPY scripts /usr/src/
