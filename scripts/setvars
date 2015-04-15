@@ -16,4 +16,8 @@ echo "Mongo launched"
 echo "Start program"
 node /usr/src/app/main.js > /usr/src/app.txt 2>&1 &
 
-sleep infinity
+export PASSWD=${PASSWD:=root}
+#Set the root password
+echo "root:$PASSWD" | chpasswd
+#Spawn dropbear
+dropbear -E -F
