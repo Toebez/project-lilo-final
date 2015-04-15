@@ -29,7 +29,9 @@ if (Meteor.isServer) {
     var insertFact = function(data) {
       Facts.insert({
         date_created: new Date().getTime(),
-        text: String.fromCharCode.apply(null, data)
+        text: switch(String.fromCharCode.apply(null, data)) {
+
+        }
       });
     }
 

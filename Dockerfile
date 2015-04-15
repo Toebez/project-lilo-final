@@ -11,14 +11,9 @@ RUN apt-get update && apt-get install -y \
   libraspberrypi-bin \
   python-pip
 
-#   \
-#  arduino
-# RUN pip install ino
+RUN apt-get install netcat
 
 COPY scripts /usr/src/
-
 COPY web/output/bundle /usr/src/app/ 
 
-# COPY arduino/ /usr/src/arduino/
-
-CMD /usr/src/start
+CMD /usr/src/setvars

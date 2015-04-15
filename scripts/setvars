@@ -1,7 +1,23 @@
 export PORT=8080
 export ROOT_URL=http://example.com
-export MONGO_URL=mongodb://localhost:27017/rpi
+export MONGO_URL=mongodb://127.0.0.1:27017/rpi
 
-service mongodb start
+echo "Start dropbear"
+export PASSWD=${PASSWD:=root}
+dropbear -E -F > dropbear.txt 2>&1 &
 
-node /usr/src/app/main.js
+echo "Start mongodb"
+mkdir /data/db/
+mongod > mongo.txt 2>&1 &
+
+echo "Wait for mongo to start"
+while ! nc -z localhost 27017; do
+  sleep 0.1 # wait for 1/10 of the second before check again
+done
+
+echo "Mongo launched"
+
+echo "Start program"
+node /usr/src/app/main.js > app.txt 2>&1 &
+
+sleep infinity
