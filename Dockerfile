@@ -16,4 +16,4 @@ RUN apt-get install -y netcat
 COPY scripts /usr/src/
 COPY web/output/bundle /usr/src/app/ 
 
-CMD /usr/src/setvars
+CMD /usr/src/start

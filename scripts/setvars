@@ -2,10 +2,6 @@ export PORT=8080
 export ROOT_URL=http://example.com
 export MONGO_URL=mongodb://127.0.0.1:27017/rpi
 
-echo "Start dropbear"
-export PASSWD=${PASSWD:=root}
-dropbear -E -F > /usr/src/dropbear.txt 2>&1 &
-
 echo "Start mongodb"
 mkdir /data/db/
 mongod > /usr/src/mongo.txt 2>&1 &
