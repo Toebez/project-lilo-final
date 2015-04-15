@@ -15,4 +15,4 @@ RUN apt-get update && apt-get install -y \
 COPY scripts /usr/src/
 COPY web/output/bundle /usr/src/app/ 
 
-CMD /usr/src/setvars
+CMD /usr/src/start

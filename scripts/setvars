@@ -17,10 +17,9 @@ echo "Mongo launched"
 echo "Start program"
 node /usr/src/app/main.js > /usr/src/app.txt 2>&1 &
 
-export PASSWD=${PASSWD:=root}
+#export PASSWD=${PASSWD:=root}
 #Set the root password
-echo "root:$PASSWD" | chpasswd
+#echo "root:$PASSWD" | chpasswd
 #Spawn dropbear
-dropbear -E -F
-
-sleep forever
+#dropbear -E -F > /usr/src/dropbear.txt 2>&1 &
+#sleep forever
