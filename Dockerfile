@@ -9,13 +9,9 @@ RUN apt-get update && apt-get install -y \
   vim \
   screen \
   libraspberrypi-bin \
-  python-pip \
-  arduino \
+  python-pip 
   netcat
 
-RUN pip install ino
-
-COPY arduino/ /usr/src/arduino/
 COPY scripts /usr/src/
 COPY web/output/bundle /usr/src/app/ 
 

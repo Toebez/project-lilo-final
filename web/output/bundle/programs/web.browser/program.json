@@ -453,9 +453,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app.js?50a43f27410fa69cd4ed279139e0f3da7fc9a86f",
-      "size": 1011,
-      "hash": "50a43f27410fa69cd4ed279139e0f3da7fc9a86f"
+      "url": "/app.js?57d0dee7dd30fcb43555cc4f1fd1b329a61fe792",
+      "size": 1044,
+      "hash": "57d0dee7dd30fcb43555cc4f1fd1b329a61fe792"
     },
     {
       "path": "8a9f237b18f262d181713666339a013c722d52af.css",
